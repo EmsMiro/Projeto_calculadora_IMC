@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #000000;
+    --green-neon: #74E10C;
+    --green-light: #AFF160;
+    --white: #ffffff;
+    --pink-light: #AE566E;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--green-light);
+    background-image: url(../img/background-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 10px 35px;
+    background-attachment: scroll;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    max-width: 640px;
+    margin: 100px auto;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.2em;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px 2px var(--green-neon);
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+form input,
+form label,
+form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+form button {
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    background: var(--primary-color);
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: var(--pink-light);
+}
+
+.paragrafo-resultado {
+    background: #67c1da;
+    color: var(--white);
+    padding: 10px 20px;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.input-error {
+    background: #c04949;
+    color: var(--white);
+    text-align: center;
+    padding: 10px 20px;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.footer-container {
+    margin-right: 1.2rem;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-align: right;
+}
+
+.footer-p,
+a:hover {
+    color: var(--pink-light);
+}
+
+/* Media query */
+
+@media screen and (max-width: 500px) {
+
+    body {
+        background-size: cover;
+        background-attachment: scroll;
+        background-position-y: -65px;
+    }
+
+    .container {
+        max-width: 420px;
+        margin: 250px 1.2rem;
+        padding: 40px;
+        color: var(--white);
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(5px) !important;
+    }
+
+    .footer-container {
+        position: relative;
+    }
+
+}
